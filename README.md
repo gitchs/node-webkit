@@ -1,7 +1,7 @@
 ## Introduction
 
 node-webkit is an app runtime based on `Chromium` and `node.js`. You can 
-write native apps in HTML and Javascript with node-webkit. It also lets you
+write native apps in HTML and JavaScript with node-webkit. It also lets you
 call Node.js modules directly from the DOM and enables a new way of writing
 native applications with all Web technologies.
 
@@ -22,20 +22,20 @@ It's created and developed in the Intel Open Source Technology Center.
 ## Downloads
 [v0.9.2 release notes](https://groups.google.com/d/msg/node-webkit/qpBhcWr-hSc/caGjhtl8cEgJ)
 
-Prebuilt binaries (v0.9.2 - Feb 20, 2014):
+Prebuilt binaries (v0.9.2 - Feb 20, 2014, based off of Node v0.11.9, Chrome 32.0.1700.107):
 
 * Linux: [32bit](http://dl.node-webkit.org/v0.9.2/node-webkit-v0.9.2-linux-ia32.tar.gz) / [64bit] (http://dl.node-webkit.org/v0.9.2/node-webkit-v0.9.2-linux-x64.tar.gz)
 * Windows: [win32](http://dl.node-webkit.org/v0.9.2/node-webkit-v0.9.2-win-ia32.zip)
 * Mac: [32bit, 10.7+](http://dl.node-webkit.org/v0.9.2/node-webkit-v0.9.2-osx-ia32.zip)
 
 **If your native Node module works only with Node v0.10, then you should use node-webkit v0.8.x, which is also a maintained branch. [More info](https://groups.google.com/d/msg/node-webkit/2OJ1cEMPLlA/09BvpTagSA0J)**  
-[v0.8.5 release notes](https://groups.google.com/d/msg/node-webkit/Izwu5icHFOQ/0A-3uEKfldkJ)
+[v0.8.6 release notes](https://groups.google.com/d/msg/node-webkit/CLPkgfV-i7s/hwkkQuJ1kngJ)
 
-Prebuilt binaries (v0.8.5 - Feb 26, 2014):
+Prebuilt binaries (v0.8.6 - Apr 18, 2014, based off of Node v0.10.22, Chrome 30.0.1599.66):
 
-* Linux: [32bit](http://dl.node-webkit.org/v0.8.5/node-webkit-v0.8.5-linux-ia32.tar.gz) / [64bit] (http://dl.node-webkit.org/v0.8.5/node-webkit-v0.8.5-linux-x64.tar.gz)
-* Windows: [win32](http://dl.node-webkit.org/v0.8.5/node-webkit-v0.8.5-win-ia32.zip)
-* Mac: [32bit, 10.7+](http://dl.node-webkit.org/v0.8.5/node-webkit-v0.8.5-osx-ia32.zip)
+* Linux: [32bit](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-ia32.tar.gz) / [64bit] (http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-x64.tar.gz)
+* Windows: [win32](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-win-ia32.zip)
+* Mac: [32bit, 10.7+](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-osx-ia32.zip)
 
 [Looking for older versions?](https://github.com/rogerwang/node-webkit/wiki/Downloads-of-old-versions)
 

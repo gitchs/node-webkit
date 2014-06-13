@@ -5,21 +5,10 @@ var cp = require('child_process');
 var exec = cp.exec;
 var sqawn = cp.sqawn;
 
-var required_file_win = [
-   'ffmpegsumo.dll',
-   'icudt.dll',
-   'libEGL.dll',
-   'libGLESv2.dll',
-   'nw.exe',
-   'nw.pak'
-];
+var exec_dir = path.dirname(process.execPath);
+exec_dir = path.resolve(exec_dir);
 
-var required_file_linux = [
-  'nw',
-  'nw.pak',
-  'libffmpegsumo.so'
-];
-
+var required_file_linux_and_win = fs.readdirSync(exec_dir);
 var required_file_macox = [
   'node-webkit.app'
 ];
@@ -28,18 +17,14 @@ var source_file = ['index.html', 'package.json'];
 
 var exec_root = path.dirname(process.execPath);
 var required_file;
-if (os.platform() == 'win32') {
-  required_file = required_file_win;
-}
-if (os.platform() == 'linux') {
-  required_file = required_file_linux;
-}
 if (os.platform() == 'darwin') {
   required_file = required_file_macox;
   if (~exec_root.indexOf("Helper.app"))
     exec_root = path.join(exec_root, '..', '..', '..')
   exec_root = path.normalize(
       path.join(exec_root, '..', '..', '..'));
+} else {
+  required_file = required_file_linux_and_win;
 }
 
 

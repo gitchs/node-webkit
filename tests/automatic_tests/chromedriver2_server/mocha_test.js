@@ -43,11 +43,13 @@ describe('chromedriver2_server', function() {
     });
 
     it('should work', function(done) {
-        if (!isFileExist)
+        if (!isFileExist) {
             done("chromedrier2_server does not exist");
-        else {
+        } else {
             assert.equal(result[0], null);
-            assert.equal(result[1], 'pass\n');
+            if (result[1] != 'pass\n' && result[1] != 'pass\r\n') {
+                done(result[1]);
+            }
             assert.equal(result[2], '');
             done();
         }

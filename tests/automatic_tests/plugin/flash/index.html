@@ -22,10 +22,12 @@
   var gui = require('nw.gui');
   var result = { ok: true };
   
-  var client = require('../../../nw_test_app').createClient({
-    argv: gui.App.argv,
-    data: result,
-  });
+  setTimeout(function(){
+    var client = require('../../../nw_test_app').createClient({
+      argv: gui.App.argv,
+      data: result,
+    });
+  },2000);
 
 </script>      
       
